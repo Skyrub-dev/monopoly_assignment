@@ -3,6 +3,14 @@
 //NEED TO FIRST OF ALL READ IN 'MONOPOLY.txt' WHICH SHOULD CONTAIN ALL THE PROPERTY DETAILS
 //PUT THIS IN A HEADER FILE AND FIND OUT HOW TO LINK THEM
 
+const char POUND = 156;
+
+class CSquare
+{
+public:
+
+};
+
 class player
 {
 public:
