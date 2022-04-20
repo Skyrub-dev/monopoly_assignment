@@ -1,0 +1,27 @@
+std::istream_iterator<int> start(monopoly), end;
+    std::vector<CSquare> myVector;
+    std::getline(monopoly);
+
+    for (int i = 0; i < 25; i++)
+    {
+        
+    }
+
+    while (std::getline(monopoly, line))
+    {
+        std::vector<char> row;
+        for (char& c : line)
+        {
+            if (c != ',')
+            {
+                row.push_back(c);
+            }
+        }
+        //myVector.push_back(row);
+        
+    }
+    //std::cout << "Read " << myVector.size();
+    //https://stackoverflow.com/questions/12233888/getline-for-vector-string
+    //https://stackoverflow.com/questions/56554212/how-do-i-read-a-text-file-into-a-2d-vector
+    //https://stackoverflow.com/questions/15138785/how-to-read-a-file-into-vector-in-c
+    //https://stackoverflow.com/questions/21919277/how-to-create-a-vector-of-class-objects-in-c

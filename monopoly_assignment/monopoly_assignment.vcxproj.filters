@@ -18,8 +18,10 @@
     <ClCompile Include="monopoly_assignment.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="random.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="random.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>
