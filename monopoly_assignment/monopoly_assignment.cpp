@@ -85,31 +85,36 @@ int main()
 
     
     int i = 0;
-    std::string line[26];
+    std::string line;
     std::string Squarename;
     std::cout << "Welcome to monopol-ish!\n";
     const int MAX_SIZE = 26;
     std::ifstream monopoly("Monopoly.txt");
 
-    std::getline(monopoly, line[i]);
+    //std::getline(monopoly, line[i]);
 
     std::vector<CSquare*> CSquareVector;
-    for (int i = 0; i < MAX_SIZE; i++)
+    if (monopoly.is_open()) //checks if the file is open
     {
-        
+        CSquare myArray[MAX_SIZE]; //declares the array of the object cSquare class
 
-        while (i < MAX_SIZE && monopoly >> Squarename)
+        std::getline(monopoly, line); //allows file to be read line by line
+        std::string sname; //string to store what I read in from my file
+
+        while (i < MAX_SIZE && monopoly >> sname) //inputs the contents of the file into the string sname
         {
-            
+            myArray[i].setCSquareName(sname); //store the string read in into the array
+            std::cout << myArray[i].getCSquareName(); //it outputs what is stored in the array here
+            i++; //adds one each time to the i counter
         }
     }
     
     //vector_of_pointers.push_back(line[i]);
 
-    while (std::getline(monopoly, line))
+    /*while (std::getline(monopoly, line))
     {
         vector_of_pointers.push_back(line);
-    }
+    }*/
     //remember to include 'delete [] vector_of_pointers;'
 
     //if (monopoly.is_open()) //checks if the file is open
