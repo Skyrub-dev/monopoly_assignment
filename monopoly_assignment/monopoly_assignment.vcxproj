@@ -139,10 +139,17 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="CPlayer.cpp" />
+    <ClCompile Include="CSquare.cpp" />
     <ClCompile Include="monopoly_assignment.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="CPlayer.h" />
+    <ClInclude Include="CSquare.h" />
     <ClInclude Include="random.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="Monopoly.txt" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
