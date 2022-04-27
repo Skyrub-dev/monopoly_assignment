@@ -13,6 +13,7 @@
 int main()
 {
     //SetUp();
+    //Need constructors and destructors in the classes
     
     int i = 0;
     std::string line;
@@ -37,6 +38,10 @@ int main()
             std::cout << setupArr[i].getCSquareName(); //it outputs what is stored in the array here
             i++; //adds one each time to the i counter
         }
+    }
+    else
+    {
+        std::cout << "File not read in!";
     }
 
     CPlayer player1;
