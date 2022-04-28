@@ -39,10 +39,6 @@ int main()
             i++; //adds one each time to the i counter
         }
     }
-    else
-    {
-        std::cout << "File not read in!";
-    }
 
     CPlayer player1;
     CPlayer player2;
