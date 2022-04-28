@@ -1,10 +1,11 @@
 #pragma once
 #include <iostream>
 #include <string>
+#include <vector>
 class CSquare //square properties
 {
 public:
-    //CSquare(std::vector<CSquare*>&);
+    CSquare();
 
     int squarenum;
     std::string squarename;
@@ -20,5 +21,7 @@ public:
     std::string getCSquareName() const;
     int getCSquarenum() const;
     int getCSquarecolour() const;
+
+    virtual ~CSquare();
 
 };

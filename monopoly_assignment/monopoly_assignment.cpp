@@ -38,6 +38,10 @@ int main()
             i++; //adds one each time to the i counter
         }
     }
+    else
+    {
+        std::cout << "Error opening file";
+    }
 
     CPlayer player1;
     CPlayer player2;
@@ -47,16 +51,14 @@ int main()
     player1.position = 0;
 
     player2.PlayerName = "Pumpkin";
-    player2.cash = 1500;
-    player2.position = 0;
     
-    int dice = Random();
+    //int dice = Random();
 
     for (int i = 0; i < 20; i++)
     {
-        std::cout << "Round " << i << endl;
-        std::cout << player1.PlayerName << "Rolls: " << dice;
-        player1.position += dice;
+        std::cout << "Round " << i << std::endl;
+        std::cout << player1.PlayerName << "Rolls: " << Random();
+        player1.position += Random();
 
         if (player1.position == 2)
         {

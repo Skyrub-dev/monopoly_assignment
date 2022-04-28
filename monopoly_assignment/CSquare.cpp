@@ -2,6 +2,14 @@
 #include <iostream>
 #include <string>
 
+
+//void CSquare::Initialise()
+
+CSquare::CSquare()
+{
+
+}
+
 void CSquare::setCSquareName(std::string CSquarename)
 {
     squarename = CSquarename;
@@ -35,4 +43,8 @@ int CSquare::getCSquarenum() const
 int CSquare::getCSquarecolour() const
 {
     return colourgroup;
+}
+
+CSquare::~CSquare()
+{
 }

@@ -11,7 +11,7 @@ int Random()
 }
 
 
-int main()
+int Random2()
 {
 	// A random number generator actually produces a pseudo-random sequence of numbers.
 	// This means that the random number generator will always produce the same sequence of numbers.
@@ -34,5 +34,7 @@ int main()
 	{
 		cout << Random() << endl;
 	}
+
+	return Random2();
 	system("pause");
 }
