@@ -13,6 +13,7 @@
 int main()
 {
     //SetUp();
+    //Need constructors and destructors in the classes
     
     int i = 0;
     std::string line;
