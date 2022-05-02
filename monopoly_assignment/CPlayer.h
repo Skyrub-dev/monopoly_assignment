@@ -5,9 +5,14 @@
 class CPlayer //player properties
 {
 public:
-    std::string PlayerName = "";
-    int cash = 1500;
-    int position = 0;
+    CPlayer(std::string, int, int); //constructor
+    std::string PlayerName;
+    int cash;
+    int position;
 
     std::string GetName() const;
+    int GetCash() const;
+    int GetPos() const;
+
+    virtual ~CPlayer();
 };

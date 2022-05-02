@@ -5,7 +5,7 @@
 class CSquare //square properties
 {
 public:
-    CSquare();
+    CSquare(); //constructor
 
     int squarenum;
     std::string squarename;
@@ -14,7 +14,6 @@ public:
 
     void setCSquareName(std::string);
     void setCSquarenum(int);
-    //up for removal if can't get it working
     void setCSquarecost(int);
     void setCSquarecolour(int);
 

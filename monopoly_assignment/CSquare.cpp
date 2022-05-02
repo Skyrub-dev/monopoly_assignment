@@ -3,11 +3,10 @@
 #include <string>
 
 
-//void CSquare::Initialise()
-
 CSquare::CSquare()
 {
-
+    squarename = "";
+    squarenum = 0;
 }
 
 void CSquare::setCSquareName(std::string CSquarename)
